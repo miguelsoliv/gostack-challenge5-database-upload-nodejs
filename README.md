@@ -75,3 +75,11 @@ Password: docker
     "argsIgnorePattern": "_"
   }],
 ```
+
+### Troubleshooting
+
+```
+error: error: function uuid_generate_v4() does not exist
+```
+
+The `uuid-ossp` extension is not installed in this database. Just run: `CREATE EXTENSION IF NOT EXISTS "uuid-ossp";`
